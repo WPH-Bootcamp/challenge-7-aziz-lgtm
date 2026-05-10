@@ -2,17 +2,23 @@
 // Hint: Type guard berguna untuk memastikan tipe data saat runtime
 import { Todo } from './types';
 
-export function isTodo(obj: any): obj is Todo {
+export function isTodo(obj: unknown): obj is Todo {
+  if (obj === null || typeof obj !== 'object') {
+    return false;
+  }
+
+  const o = obj as Record<string, unknown>;
+
   const hasRequiredFields =
-    obj !== null &&
-    typeof obj.id === 'number' &&
-    typeof obj.task === 'string' &&
-    typeof obj.completed === 'boolean';
+    typeof o.id === 'number' &&
+    typeof o.task === 'string' &&
+    (o.status === 'active' || o.status === 'done') &&
+    typeof o.createdAt === 'string';
 
   return hasRequiredFields;
 }
 // TODO: Buat fungsi untuk memvalidasi apakah suatu objek adalah To-Do yang valid
-export function isTodoArray(data: any): data is Todo[] {
+export function isTodoArray(data: unknown): data is Todo[] {
   if (!Array.isArray(data)) {
     return false;
   }

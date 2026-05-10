@@ -8,6 +8,7 @@ export interface Todo {
   id: number;
   task: string;
   status: TodoStatus;
+  createdAt: string;
 }
 
 // TODO: Buat tipe untuk status To-Do (active/done)
@@ -19,5 +20,3 @@ export type TodoStatus = 'active' | 'done';
 export type AddTodo = (task: string) => void;
 export type ToggleTodo = (id: number) => void;
 export type DeleteTodo = (id: number) => void;
-
-// test   
