@@ -108,16 +108,16 @@ Buat menu interaktif menggunakan readline. Aplikasi harus:
 
 Sebelum submit, pastikan:
 
-- [ ] Semua file di-folder src sudah diisi
-- [ ] Tidak ada error saat compile (npm run build)
-- [ ] Tidak ada type errors (gunakan `npx tsc --noEmit` untuk cek)
-- [ ] Fungsi add todo berjalan dengan baik
-- [ ] Fungsi mark complete berjalan dengan baik
-- [ ] Fungsi delete todo berjalan dengan baik
-- [ ] Fungsi list todos menampilkan [ACTIVE] dan [DONE] dengan benar
-- [ ] Type guards sudah diimplementasikan
-- [ ] Error handling sudah ditangani dengan baik
-- [ ] Imports dan exports sudah benar
+- [☑️] Semua file di-folder src sudah diisi
+- [☑️] Tidak ada error saat compile (npm run build)
+- [☑️] Tidak ada type errors (gunakan `npx tsc --noEmit` untuk cek)
+- [☑️] Fungsi add todo berjalan dengan baik
+- [☑️] Fungsi mark complete berjalan dengan baik
+- [☑️] Fungsi delete todo berjalan dengan baik
+- [☑️] Fungsi list todos menampilkan [ACTIVE] dan [DONE] dengan benar
+- [☑️] Type guards sudah diimplementasikan
+- [☑️] Error handling sudah ditangani dengan baik
+- [☑️] Imports dan exports sudah benar
 
 ## Kriteria Penilaian
 
